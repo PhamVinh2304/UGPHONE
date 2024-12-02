@@ -1,3 +1,4 @@
+#!/bin/bash
 mkdir -p ~/.termux/boot
 echo '#!/bin/bash
 su -c "export PATH=\$PATH:/data/data/com.termux/files/usr/bin && export TERM=xterm-256color && cd /storage/emulated/0/Download && python ./Rejoin.py" <<EOF
