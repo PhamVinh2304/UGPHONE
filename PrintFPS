@@ -1,0 +1,42 @@
+local username = game.Players.LocalPlayer.Name
+local RunService = game:GetService("RunService")
+
+local screenGui = Instance.new("ScreenGui")
+local textLabel = Instance.new("TextLabel")
+
+screenGui.Parent = game.CoreGui
+
+textLabel.Parent = screenGui
+textLabel.Text = "FPS: 0"
+textLabel.Size = UDim2.new(1, 0, 0.2, 0)
+textLabel.Position = UDim2.new(0, 0, 0, 0)
+textLabel.Font = Enum.Font.FredokaOne
+textLabel.TextScaled = true
+textLabel.BackgroundTransparency = 1
+textLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+local function rainbowColor()
+    local hue = 0
+    while true do
+        hue = hue + 0.01
+        if hue > 1 then hue = 0 end
+        textLabel.TextColor3 = Color3.fromHSV(hue, 1, 1)
+        RunService.RenderStepped:Wait()
+    end
+end
+
+local lastUpdate = tick()
+local frameCount = 0
+
+RunService.RenderStepped:Connect(function()
+    frameCount = frameCount + 1
+    local now = tick()
+    if now - lastUpdate >= 1 then
+        local fps = frameCount / (now - lastUpdate)
+        textLabel.Text = string.format("FPS: %d", math.floor(fps))
+        lastUpdate = now
+        frameCount = 0
+    end
+end)
+
+spawn(rainbowColor)
