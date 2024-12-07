@@ -1,0 +1,15 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PhamVinh2304/UGPHONE/refs/heads/main/xoalag.lua"))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PhamVinh2304/UGPHONE/refs/heads/main/trackstats.lua"))()
+
+_G.Setting = {
+    -- Booster
+    ['White Screen'] = true,
+    ['FPS Booster'] = true,
+    ['Auto Sanguine Art'] = true,
+    ['Owner Beast Hunter'] = 'Vinhhanh2304'
+}
+_G.Webhook = {
+    ["Enabled"] = true,
+    ["Url"] = "https://discord.com/api/webhooks/1312295892245545060/045Cw7Fh0VRtGY-Xtpl2UKAWQ4qSFCJBO-zVUwU1M6VjWW7KLh2EcEAEqWiLfHjl9lgQ"
+}
