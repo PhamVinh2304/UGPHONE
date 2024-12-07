@@ -1,4 +1,3 @@
-local username = game.Players.LocalPlayer.Name
 local RunService = game:GetService("RunService")
 
 local screenGui = Instance.new("ScreenGui")
