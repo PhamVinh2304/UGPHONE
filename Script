@@ -10,6 +10,6 @@ _G.Setting = {
     ['Owner Beast Hunter'] = 'Vinhhanh987'
 }
 _G.Webhook = {
-    ["Enabled"] = true,
+    ["Enabled"] = false,
     ["Url"] = "https://discord.com/api/webhooks/1312295892245545060/045Cw7Fh0VRtGY-Xtpl2UKAWQ4qSFCJBO-zVUwU1M6VjWW7KLh2EcEAEqWiLfHjl9lgQ"
 }
