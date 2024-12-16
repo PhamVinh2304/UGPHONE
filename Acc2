@@ -7,7 +7,7 @@ _G.Setting = {
     ['White Screen'] = true,
     ['FPS Booster'] = true,
     ['Auto Sanguine Art'] = true,
-    ['Owner Beast Hunter'] = 'Vinhhanh2304'
+    ['Owner Beast Hunter'] = 'ss'
 }
 _G.Webhook = {
     ["Enabled"] = false,
