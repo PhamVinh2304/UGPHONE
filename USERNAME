@@ -1,48 +1,36 @@
+repeat wait() until game.Players.LocalPlayer -- Đợi đến khi LocalPlayer sẵn sàng
+
 local player = game.Players.LocalPlayer
 local username = player.Name
 
+-- Dữ liệu cấu hình chung
+local ConfigData = {
+    ["KickWhenReachGoal"] = {
+        ["Rank"] = 33,
+        ["Rebirth"] = 9,
+        ["Area"] = 239
+    },
+    ["StopAt"] = {
+        ["Rank"] = 33, 
+        ["Area"] = 239
+    },
+    ["AutoOpen"] = true,
+    ["AutoBalloon"] = true,
+    ["FPSBooster"] = true,
+    ["UltraFPS"] = true,
+    ["Webhook"] = "https://discord.com/api/webhooks/1345667593943646268/dvsCeQFMM-K64NckFfgWEk32gIxmRx7hfDo9cir877euXvd8r7sSMwMoQrFsXfLWFBvt"
+}
+
 if username == "Vinhhanh2304" then
-    getgenv().Config = {
-    ["EquipEnchants"] = {"Coins", "Coins", "Coins", "Coins", "Coins"},
-    ["KickWhenReachGoal"] = {
-        ["Rank"] = 33,
-        ["Rebirth"] = 9,
-        ["Area"] = 239
-    },
-    ["StopAt"] = {
-        ["Rank"] = 33, 
-        ["Area"] = 239
-    },
-    
-    ["AutoOpen"] = true,
-    ["AutoBalloon"] = true, -- WANT A BAN? REPORT A BUG IN THIS SCRIPT.
+    ConfigData["EquipEnchants"] = {"Coins", "Coins", "Coins", "Coins", "Coins"}
+    getgenv().Config = ConfigData
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/177d65e916988f4b84dd21ed33a2aa91.lua"))()
 
-    ["FPSBooster"] = true, -- REPORT NO SCRIPT BUGS.
-    ["UltraFPS"] = true, -- I WILL BAN YOU IF YOU REPORT ANY SCRIPT BUGS.
-    ["Webhook"] = "https://discord.com/api/webhooks/1345667593943646268/dvsCeQFMM-K64NckFfgWEk32gIxmRx7hfDo9cir877euXvd8r7sSMwMoQrFsXfLWFBvt", -- DO NOT REPORT ANY SCRIPT BUGS. WE KNOW ITS BUGGED.
-}
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/177d65e916988f4b84dd21ed33a2aa91.lua"))()
 elseif username == "Vinhhanh987" then
-    getgenv().Config = {
-    ["EquipEnchants"] = {"Diamonds", "Diamonds", "Diamonds", "Diamonds", "Diamonds"},
-    ["KickWhenReachGoal"] = {
-        ["Rank"] = 33,
-        ["Rebirth"] = 9,
-        ["Area"] = 239
-    },
-    ["StopAt"] = {
-        ["Rank"] = 33, 
-        ["Area"] = 239
-    },
-    
-    ["AutoOpen"] = true,
-    ["AutoBalloon"] = true, -- WANT A BAN? REPORT A BUG IN THIS SCRIPT.
+    ConfigData["EquipEnchants"] = {"Diamonds", "Diamonds", "Diamonds", "Diamonds", "Diamonds"}
+    getgenv().Config = ConfigData
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/177d65e916988f4b84dd21ed33a2aa91.lua"))()
 
-    ["FPSBooster"] = true, -- REPORT NO SCRIPT BUGS.
-    ["UltraFPS"] = true, -- I WILL BAN YOU IF YOU REPORT ANY SCRIPT BUGS.
-    ["Webhook"] = "https://discord.com/api/webhooks/1345667593943646268/dvsCeQFMM-K64NckFfgWEk32gIxmRx7hfDo9cir877euXvd8r7sSMwMoQrFsXfLWFBvt", -- DO NOT REPORT ANY SCRIPT BUGS. WE KNOW ITS BUGGED.
-}
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/177d65e916988f4b84dd21ed33a2aa91.lua"))()
 else
     print("SAI USERNAME")
 end
