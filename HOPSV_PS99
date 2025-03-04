@@ -1,0 +1,8 @@
+local TeleportService = game:GetService("TeleportService")
+local PlaceID = 8737899170 -- Thay bằng ID của server/game mục tiêu nếu cần
+local timeInterval = 25 * 60 -- 30 phút (30*60 giây); thay đổi giá trị này để điều chỉnh thời gian
+
+while true do
+    wait(timeInterval)
+    TeleportService:Teleport(PlaceID)
+end
