@@ -1,2 +1,2 @@
-https://raw.githubusercontent.com/PhamVinh2304/UGPHONE/refs/heads/main/HOPSV_PS99
-https://raw.githubusercontent.com/PhamVinh2304/UGPHONE/refs/heads/main/USERNAME
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PhamVinh2304/UGPHONE/refs/heads/main/HOPSV_PS99"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PhamVinh2304/UGPHONE/refs/heads/main/USERNAME"))()
